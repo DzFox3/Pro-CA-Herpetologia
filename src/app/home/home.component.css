@@ -58,6 +58,9 @@
     .logo, .texto {
       width: 100%; /* Ocupa todo el ancho en móviles */
     }
+    .desaparece{
+      display: none;
+    }
   }
   
   img {
