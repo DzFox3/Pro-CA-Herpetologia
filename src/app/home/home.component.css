@@ -18,10 +18,25 @@
     background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
   }
   
-  .hero-content {
-    position: relative;
-    z-index: 2;
-  }
+.hero-content {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  height: auto; /* 60% del alto de pantalla */
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 30px 10px 10px; /* top right bottom left → más espacio a la derecha */
+}
+
+.hero-content img {
+  max-width: 100%;
+  max-height: 52%; /* Aumentado para que las imágenes sean más grandes */
+  object-fit: contain;
+}
+
   .s2{
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   }
@@ -46,7 +61,7 @@
     text-align: center;
   }
   .txt{
-    text-align: center;
+    text-align: justify;
     font-size: 1.5rem;
   }
   /* Ajustes para pantallas pequeñas */
@@ -78,4 +93,192 @@
 }
   .titulo{
     font-size: 35px;
+  }
+
+
+
+/* Tarjetas */
+/* Estilos generales para tarjetas */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Títulos centrados */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Botones */
+.card .btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo de los modales */
+.modal-content {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.modal-body img {
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+/* Texto dentro del modal */
+.modal-body p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+/* Responsive fix para imágenes pequeñas */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 200px;
+  }
+
+  .modal-body img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+}
+/* Seccion 4  */
+  .info-box {
+    background: #f0f8ff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgb(0 123 255 / 0.2);
+    padding: 30px;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  .info-box p.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0d6efd;
+    margin-bottom: 10px;
+  }
+  .info-box p.subtitle {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  /* Botón con icono */
+  .btn-info-modal {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .btn-info-modal i {
+    margin-left: 8px;
+  }
+
+  /* Modal header */
+  .modal-header {
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+    color: white;
+    border-bottom: none;
+  }
+  .modal-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  /* Pestañas */
+  .nav-tabs .nav-link {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #6610f2;
+  }
+  .nav-tabs .nav-link.active {
+    color: white !important;
+    background-color: #6610f2 !important;
+    border-color: #6610f2 #6610f2 #fff;
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* Títulos dentro del modal */
+  .modal-body h6 {
+    color: #6610f2;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  /* Enlaces */
+  a {
+    color: #0d6efd;
+    font-weight: 600;
+  }
+  a:hover {
+    color: #6610f2;
+    text-decoration: underline;
+  }
+
+
+  .pastel-container {
+    background: #f9f6f7; /* rosa pastel muy suave */
+    border: 1.5px solid #dcd3d6; /* borde gris claro */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(220, 211, 214, 0.3);
+    padding: 30px 25px;
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #5a4e56;
+    text-align: center; /* centrar contenido */
+  }
+  .pastel-container p.mb-2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #7ea89f; /* verde menta pastel */
+    margin-bottom: 0.6rem !important;
+  }
+  .pastel-container p.mb-3 {
+    font-size: 1.05rem;
+    color: #708d86; /* verde grisáceo suave */
+    margin-bottom: 1.5rem !important;
+  }
+  .btn-pastel {
+    background-color: #a3d9c1; /* verde menta pastel */
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.5rem 1.4rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(163, 217, 193, 0.4);
+    cursor: pointer;
+  }
+  .btn-pastel:hover,
+  .btn-pastel:focus {
+    background-color: #7ecba7; /* verde menta más oscuro */
+    box-shadow: 0 4px 10px rgba(26, 243, 142, 0.6);
+    outline: none;
   }
