@@ -282,3 +282,30 @@
     box-shadow: 0 4px 10px rgba(26, 243, 142, 0.6);
     outline: none;
   }
+
+  .azugris{
+    background-color: #adb7d3;
+  }
+
+  .versal{
+    background-color: #91c39c;
+  }
+
+  .roscor{
+    background-color: #ec8dbe;
+  }
+
+  .rospas{
+    background-color: #f6c6df;
+  }
+
+  .table th,
+.table td {
+  font-weight: 600; /* Letras un poco más gruesas */
+  padding: 1rem;     /* Más espacio dentro de las celdas */
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0.5rem; /* Separación entre celdas */
+}

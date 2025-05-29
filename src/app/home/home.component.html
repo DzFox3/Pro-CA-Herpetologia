@@ -2,8 +2,8 @@
   <div class="hero">
     <div class=""></div>
     <div class="hero-content">
-      <img class="desaparece" src="assets/imagenes/Logo-AHA.png" alt="">
-      <img class="desaparece" src="assets/imagenes/Logo_Inecoa_tpte.png" alt="">
+      <img class="desaparece" style="width: 70%; height: auto;" src="assets/imagenes/Logo-AHA.png" alt="">
+      <img class="desaparece" style="width: 50%; height: auto;" src="assets/imagenes/Logo_Inecoa_tpte.png" alt="">
     </div>
   </div>
   <!--SECCION 1-->
@@ -25,53 +25,53 @@
   </div>
   <!-- Seccion 3 Según Sol -->
   <div class="container my-5 p-4 bg-white rounded shadow">
-  <h2 class="text-center text-primary fw-bold mb-4">INSCRIPCIÓN</h2>
+  <h2 class="text-center text-white fw-bold mb-4 azugris">INSCRIPCIÓN</h2>
 
   <h3 class="text-center text-secondary fw-semibold mb-3">ARANCELES</h3>
 
   <div class="table-responsive">
-    <table class="table table-bordered align-middle text-center">
+    <table class="table table-bordered align-middle text-center text-white">
       <thead class="table-purple">
         <tr>
-          <th scope="col">CATEGORÍAS</th>
-          <th scope="col"></th>
-          <th scope="col">Hasta 30 de Junio 2025</th>
-          <th scope="col">Hasta 30 de Agosto 2025</th>
-          <th scope="col">Desde 1 de Septiembre 2025</th>
+          <th class="versal" scope="col">CATEGORÍAS</th>
+          <th class="versal" scope="col"></th>
+          <th class="versal" scope="col">Hasta 30 de Junio 2025</th>
+          <th class="versal" scope="col">Hasta 30 de Agosto 2025</th>
+          <th class="versal" scope="col">Desde 1 de Septiembre 2025</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Estudiantes de grado</td>
-          <td></td>
-          <td>ARS 30000</td>
-          <td>ARS 50000</td>
-          <td>A definir</td>
+          <td class="azugris">Estudiantes de grado</td>
+          <td class="azugris"></td>
+          <td class="azugris">ARS 30000</td>
+          <td class="azugris">ARS 50000</td>
+          <td class="azugris">A definir</td>
         </tr>
         <tr>
-          <td rowspan="4">Profesionales</td>
-          <td><strong>Socios AHA</strong> - Nacionales</td>
-          <td>ARS 50000</td>
-          <td>ARS 70000</td>
-          <td>A definir</td>
+          <td class="rospas" rowspan="4">Profesionales</td>
+          <td class="roscor"><strong>Socios AHA</strong> - Nacionales</td>
+          <td class="roscor">ARS 50000</td>
+          <td class="roscor">ARS 70000</td>
+          <td class="roscor">A definir</td>
         </tr>
         <tr>
-          <td><strong>Socios AHA</strong> - Extranjeros</td>
-          <td>USD 50</td>
-          <td>USD 70</td>
-          <td>A definir</td>
+          <td class="roscor"><strong>Socios AHA</strong> - Extranjeros</td>
+          <td class="roscor">USD 50</td>
+          <td class="roscor">USD 70</td>
+          <td class="roscor">A definir</td>
         </tr>
         <tr>
-          <td><strong>No Socios AHA</strong> - Nacionales</td>
-          <td>ARS 100000</td>
-          <td>ARS 120000</td>
-          <td>A definir</td>
+          <td class="rospas"><strong>No Socios AHA</strong> - Nacionales</td>
+          <td class="rospas">ARS 100000</td>
+          <td class="rospas">ARS 120000</td>
+          <td class="rospas">A definir</td>
         </tr>
         <tr>
-          <td><strong>No Socios AHA</strong> - Extranjeros</td>
-          <td>USD 90</td>
-          <td>USD 110</td>
-          <td>A definir</td>
+          <td class="rospas"><strong>No Socios AHA</strong> - Extranjeros</td>
+          <td class="rospas">USD 90</td>
+          <td class="rospas">USD 110</td>
+          <td class="rospas">A definir</td>
         </tr>
       </tbody>
     </table>
@@ -140,11 +140,16 @@
               Formato
             </button>
           </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="enviar-tab" type="button" onclick="window.open('https://forms.gle/g3QWpHY5jknb9rRG9', '_blank')">
+              Enviar resumen
+            </button>
+          </li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content" id="infoTabContent">
-          <!-- Primera sección -->
+          <!-- Presentación -->
           <div class="tab-pane fade show active" id="presentacion" role="tabpanel" aria-labelledby="presentacion-tab">
             <h6 class="fw-bold">PRESENTACIÓN Y ENVÍO DE RESUMEN</h6>
             <p>Fecha límite envío de resúmenes: Viernes 18 de Julio 2025</p>
@@ -165,14 +170,14 @@
             </ul>
           </div>
 
-          <!-- Segunda sección -->
+          <!-- Formato -->
           <div class="tab-pane fade" id="formato" role="tabpanel" aria-labelledby="formato-tab">
             <h6 class="fw-bold">Formato de los resúmenes:</h6>
             <ul>
               <li>Los resúmenes deben redactarse en español con fuente Times New Roman 12, interlineado sencillo.</li>
               <li>Los nombres científicos deben escribirse en letra cursiva (itálica).</li>
               <li>Los resúmenes no deben incluir referencias bibliográficas.</li>
-              <li>Nombre su archivo word indicando tipo de presentación (ORAL ó PÓSTER), guión bajo, APELLIDO del primer autor e iniciales del nombre, guión bajo, número de resúmen presentado (1, 2 ó 3). Ejemplo: <code>ORAL_LÓPEZMJ_1</code></li>
+              <li>Nombre su archivo word indicando tipo de presentación (ORAL ó PÓSTER), guión bajo, APELLIDO del primer autor e iniciales del nombre, guión bajo, número de resumen presentado (1, 2 ó 3). Ejemplo: <code>ORAL_LÓPEZMJ_1</code></li>
             </ul>
             <p>Los resúmenes que no respeten estas instrucciones serán devueltos a los autores antes de ser evaluados por el Comité Editorial.</p>
 
@@ -180,11 +185,9 @@
             <p><strong>Título del trabajo</strong> (centrado, en negrita, máximo 25 palabras, sin punto final)</p>
             <p>Apellido, Inicial del primer nombre. Inicial del segundo nombre.<sup>1*</sup>; xxx y xxx</p>
             <p>Colocar la/s filiaciones de los autores:<br>
-            <sup>1</sup>Nombre del departamento, y/o nombre de la Institución. Ciudad, provincia, país.<br>
-            *Dirección de correo electrónico: primerautor@email.com</p>
+              <sup>1</sup>Nombre del departamento, y/o nombre de la Institución. Ciudad, provincia, país.<br>
+              *Dirección de correo electrónico: primerautor@email.com</p>
             <p>Cuerpo del resumen (300 palabras como máximo)</p>
-
-            <p><strong>Formulario para envío de resumenes:</strong> <a href="https://forms.gle/g3QWpHY5jknb9rRG9" target="_blank" rel="noopener noreferrer">https://forms.gle/g3QWpHY5jknb9rRG9</a></p>
           </div>
         </div>
 
@@ -355,9 +358,26 @@
   <br>
 
   <!-- Sección 4 -->
-  <div class="container-fluid contenedor fondoxd" style="text-align: left; padding: 2%;">
-    <div>
-      <img src="assets/imagenes/circular.png" alt="" style="width: 25%;">
+<div class="container my-5">
+  <div class="row justify-content-center g-3">
+    <div class="col-12 col-md-2">
+      <img src="assets/imagenes/circular.png" class="img-fluid rounded shadow" alt="Circular 1">
+    </div>
+    <div class="col-12 col-md-2">
+      <img src="assets/imagenes/SegundaCircular1.jpg" class="img-fluid rounded shadow" alt="Circular 2">
+    </div>
+    <div class="col-12 col-md-2">
+      <img src="assets/imagenes/SegundaCircular2.jpg" class="img-fluid rounded shadow" alt="Circular 3">
+    </div>
+    <div class="col-12 col-md-2">
+      <img src="assets/imagenes/SegundaCircular3.jpg" class="img-fluid rounded shadow" alt="Circular 4">
+    </div>
+    <div class="col-12 col-md-2">
+      <img src="assets/imagenes/SegundaCircular4.jpg" class="img-fluid rounded shadow" alt="Circular 5">
     </div>
   </div>
+</div>
+
+
+
 </div>
