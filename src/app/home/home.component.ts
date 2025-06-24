@@ -10,11 +10,16 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   modalImageSrc: string = '';
+  selectedImage: string | null = null;
 
   openImageModal(src: string): void {
     this.modalImageSrc = src; 
     const modal = new bootstrap.Modal(document.getElementById('imageModal'));
     modal.show();
+  }
+  
+  closeImageModal() {
+    this.selectedImage = null;
   }
 }
 

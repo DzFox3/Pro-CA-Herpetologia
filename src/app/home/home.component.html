@@ -155,7 +155,7 @@
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="ejemplo-tab" data-bs-toggle="tab" data-bs-target="#ejemplo" type="button" role="tab" aria-controls="ejemplo" aria-selected="false">
-              Ejemplo de presentación
+              Presentación Corta
             </button>
           </li>
         </ul>
@@ -453,17 +453,31 @@
 
 <!-- Modal Ampliado -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- cambiado a modal-xl -->
-    <div class="modal-content bg-transparent border-0">
-      <div class="modal-body p-0 text-center" style="display: flex; justify-content: center; align-items: center;">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-transparent border-0 position-relative">
+      
+  <button
+    type="button"
+    class="btn-modal-close"
+    data-bs-dismiss="modal"
+    aria-label="Cerrar"
+  >
+    &times;
+  </button>
+
+
+
+      <div class="modal-body p-0 text-center d-flex justify-content-center align-items-center">
         <img [src]="modalImageSrc"
              class="img-fluid rounded shadow"
              alt="Imagen ampliada"
-             style="max-height: 90vh; width: auto; max-width: 100%;"> <!-- estilos para tamaño -->
+             style="max-height: 90vh; width: auto; max-width: 100%;">
       </div>
     </div>
   </div>
 </div>
+
+
 
 
 <!-- Auspiciantes -->
@@ -476,7 +490,7 @@
           src="assets/imagenes/conicetlog.png" 
           alt="CONICET" 
           class="img-fluid rounded shadow-sm p-3" 
-          style="max-width:150px; background-color:#e9ecef;"
+          style="max-width:300px; background-color:#e9ecef;"
         >
       </div>
       <div class="m-3 text-center">
@@ -484,7 +498,7 @@
           src="assets/imagenes/williams.png" 
           alt="Fundación Williams" 
           class="img-fluid rounded shadow-sm p-3" 
-          style="max-width:150px; background-color:#1f2124;"
+          style="max-width:300px; background-color:#1f2124;"
         >
       </div>
     </div>
