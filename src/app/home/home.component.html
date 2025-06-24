@@ -149,8 +149,13 @@
             </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="enviar-tab" type="button" onclick="window.open('https://forms.gle/g3QWpHY5jknb9rRG9', '_blank')">
+            <button class="nav-link" id="enviar-tab" type="button"onclick="window.open('https://forms.gle/g3QWpHY5jknb9rRG9', '_blank')">
               Enviar resumen
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ejemplo-tab" data-bs-toggle="tab" data-bs-target="#ejemplo" type="button" role="tab" aria-controls="ejemplo" aria-selected="false">
+              Ejemplo de presentación
             </button>
           </li>
         </ul>
@@ -197,6 +202,16 @@
               *Dirección de correo electrónico: primerautor@email.com</p>
             <p>Cuerpo del resumen (300 palabras como máximo)</p>
           </div>
+
+          <!-- Ejemplo de presentación -->
+          <div class="tab-pane fade" id="ejemplo" role="tabpanel" aria-labelledby="ejemplo-tab">
+            <h6 class="fw-bold text-center">Ejemplo de presentación</h6>
+            <div class="d-flex justify-content-center mt-3">
+              <video #presentacionVideo src="assets/videos/planillaEjemplo.mp4" controls class="rounded shadow" style="max-width:100%; height:auto;"></video>
+            </div>
+          </div>
+
+          
         </div>
 
       </div>
@@ -208,9 +223,10 @@
 </div>
 
 
+
 <!-- Seccion 5 -->
-<div id="conferencistas" class="text-center py-3" style="color: #0d6efd;">
-  <h1>Equipo de Conferencistas</h1>
+<div class="text-center py-3" style="color: #0d6efd;">
+  <h1>Conferencistas</h1>
 </div>
 <div class="row justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
   <!-- Tarjeta: Amaël Borzée -->
@@ -393,7 +409,9 @@
   <br>
 
 <!-- Sección 4 -->
-<div id="circular" class="container my-5">
+
+<div  class="container my-5">
+  <h3 id="circular">Circular</h3>
   <div class="row justify-content-center g-3">
     <div class="col-12 col-md-2">
       <img src="assets/imagenes/circular.png"
@@ -446,5 +464,34 @@
     </div>
   </div>
 </div>
+
+
+<!-- Auspiciantes -->
+<section id="conferencistas" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Auspiciantes</h2>
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+      <div class="m-3 text-center">
+        <img 
+          src="assets/imagenes/conicetlog.png" 
+          alt="CONICET" 
+          class="img-fluid rounded shadow-sm p-3" 
+          style="max-width:150px; background-color:#e9ecef;"
+        >
+      </div>
+      <div class="m-3 text-center">
+        <img 
+          src="assets/imagenes/williams.png" 
+          alt="Fundación Williams" 
+          class="img-fluid rounded shadow-sm p-3" 
+          style="max-width:150px; background-color:#1f2124;"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
 </div>

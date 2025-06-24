@@ -17,3 +17,6 @@ export class HomeComponent {
     modal.show();
   }
 }
+
+
+
