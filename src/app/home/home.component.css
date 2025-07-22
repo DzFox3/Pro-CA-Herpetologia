@@ -363,3 +363,34 @@
   z-index: 1051; /* por encima del modal */
 }
 
+
+/* ===== Estilo general para secciones pastel ===== */
+.pastel-section {
+  background-color: #faf5f7;  /* Fondo rosa pastel muy claro */
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Títulos ===== */
+.section-title {
+  color: #a4578d; /* Violeta pastel suave */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Texto ===== */
+.section-text {
+  color: #5f4b5a; /* Gris rosado */
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== Ajustes generales ===== */
+section + section {
+  margin-top: 3rem; /* Espacio entre secciones */
+}
