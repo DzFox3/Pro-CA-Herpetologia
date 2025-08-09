@@ -26,6 +26,10 @@ export class HomeComponent {
       img.style.width = 'auto';
       img.style.height = 'auto';
       img.style.objectFit = 'contain';
+      if (window.innerWidth < 768) { // móviles
+        img.style.maxWidth = '90vw';
+        img.style.maxHeight = '90vh';
+      }
     }
   }, 200);
   }
