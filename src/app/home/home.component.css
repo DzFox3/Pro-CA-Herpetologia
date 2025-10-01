@@ -210,6 +210,15 @@
     }
   }
 
+  .titulo-circular-final{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;                  /* letras blancas */
+    background-color: #141414;    /* color de fondo (azul moderno) */
+    padding: 0.6em 1em;           /* espacio dentro de la barra */
+    border-radius: 6px;           /* bordes redondeados */
+    margin: 1em 0;   
+  }
 
   /* Botón con icono */
   .btn-info-modal {
